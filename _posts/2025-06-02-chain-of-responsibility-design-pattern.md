@@ -3,6 +3,8 @@ layout: post
 title: "Chain of Responsibility Design Pattern"
 date: 2025-06-02
 tags: [design-patterns]
+permalink: /:title/
+
 ---
 
 
