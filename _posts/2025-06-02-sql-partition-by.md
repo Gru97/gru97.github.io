@@ -43,7 +43,8 @@ SELECT CustomerId,
 FROM Transactions
 ````   
 
-The result would be:
+The result would be:   
+
 | CustomerId | CustomerName | TotalAmount |
 |------------|--------------|-------------|
 | 1          | Jack         | 1200        |
@@ -68,7 +69,8 @@ FROM Transactions)
 SELECT * FROM TX_CTE WHERE RowNumber=1
 ````   
 
-The result would be:   
+The result would be:     
+
 | CustomerId | CustomerName | TotalAmount | CardNumber |
 | ---------- | ------------ | ----------- | ----------|
 | 1          | Jack         | 1200        | 1273       |
