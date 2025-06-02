@@ -1,2 +1,5 @@
 title: Fatemeh's Tech Blog
 theme: minima
+
+header_pages:
+  - about.md
