@@ -1,4 +1,11 @@
-## Chain Of Responsibility Pattern
+---
+layout: post
+title: "Chain of Responsibility Design Pattern"
+date: 2025-06-02
+tags: [design-patterns]
+---
+
+
 I came across a wrong way of using Chain of Responsibility pattern in a project and that became the motivation to learn about it and the right solution to that problem.    
 In GoF the intent of COR is said to be, "avoid coupling the sender of a request to its receiver by giving more than one object a chance to handle the request, chain the receiving objects and pass the request along the chain until an object handles it".
 In the provided example, assuming we want to process some parcels with different characteristics like different weight, we don't know which handler would handle the parcel a priori. We will chain all handlers that have the same interface, and pass the parcel down to the chain. Based on the size (weight) of each parcel, the handlers choose to handle the request or pass it along. So we can add handlers independent of one another, and the object (request) to be handled wouldn't need to know anything about how and what handler will handle it.
