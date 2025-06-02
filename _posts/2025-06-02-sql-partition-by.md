@@ -45,13 +45,12 @@ FROM Transactions
 
 The result would be:
 | CustomerId | CustomerName | TotalAmount |
-| ---------- | ------------ | ----------- |
+|------------|--------------|-------------|
 | 1          | Jack         | 1200        |
 | 1          | Jack         | 1200        |
 | 2          | Sara         | 3000        |
 | 2          | Sara         | 3000        |
 | 2          | Sara         | 3000        |
-
 
 ---
 
