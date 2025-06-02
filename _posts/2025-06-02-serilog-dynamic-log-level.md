@@ -2,7 +2,7 @@
 layout: post
 title: "Changing Log Level At Runtime"
 date: 2025-06-02
-tags: [.net,serilog]
+tags: [serilog]
 permalink: /:title/
 
 ---
