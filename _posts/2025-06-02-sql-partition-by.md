@@ -6,8 +6,10 @@ tags: [sql]
 permalink: /:title/
 
 ---
+The PARTITION BY clause in SQL is a powerful feature that allows you to divide your result set into partitions and perform calculations or aggregations on each partition independently. Unlike GROUP BY, which reduces the result set to one row per group, PARTITION BY retains all rows while enabling per-partition calculations.   
+This clause is commonly used with window functions such as ROW_NUMBER(), RANK(), SUM(), AVG(), and COUNT(). By specifying columns in the PARTITION BY clause, you can calculate values like cumulative sums, rankings, or averages within each partition, providing more granular insights into your data
 
-* Suppose we have modelled a transaction concept as a table in sql called Transactions with columns as follows: 
+Suppose we have modelled a transaction concept as a table in sql called Transactions with columns as follows: 
 
 | Id | TransactionDate | Amount | CustomerId | CustomerName | CardNumber (hypothetical) |
 | -- | -------------- | ------ | ----------| ------------ | -------------------------|
@@ -18,7 +20,7 @@ permalink: /:title/
 | 1  | 2023-01-03     | 2200   | 2         | Sara        | 1275                     |
 
 ---
-* Our first requirement is to give a report of the total amount of each customers transactions.
+Our first requirement is to give a report of the total amount of each customers transactions.
 
 ```
 SELECT CustomerId, 
@@ -33,7 +35,7 @@ GROUP BY CustomerId
 | 2          | 3000        |
 
 ---  
-* A new requirement comes in, we need the report to contain names of each customer, we do not want to use join or subquery as it will make things slow. We can't use group by anymore since we need columns other than the group by column. 
+A new requirement comes in, we need the report to contain names of each customer, we do not want to use join or subquery as it will make things slow. We can't use group by anymore since we need columns other than the group by column. 
 ````
 SELECT CustomerId, 
        CustomerName,
@@ -53,7 +55,7 @@ The result would be:
 
 ---
 
-* OK, but we need only one row for each customer. And One more thing, we need a the card number of the latest transaction.
+OK, but we need only one row for each customer. And One more thing, we need a the card number of the latest transaction.
 So we are going to use ROW_NUMBER method to number each record and CTE to make our query more flexible:
 
 ````
