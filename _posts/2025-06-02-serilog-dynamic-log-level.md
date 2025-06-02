@@ -7,7 +7,6 @@ permalink: /:title/
 
 ---
 
-
 Due to some restrictions we are facing in a project when it comes to using logging and monitoring tools, and other reasons beyond the scope of this document, we've decided to implement a machanism to change log level at runtime.
 Here are the steps we took to do it:
 
