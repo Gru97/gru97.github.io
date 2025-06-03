@@ -10,7 +10,7 @@ permalink: /:title/
 
 I like visualizing things in order to understand the flow and the components involved, when making a design decision. So, when I want to analyze something and find an architectural solution, I usually open a Miro board, Excalidraw or something of that nature and start sketching.    
    
-<img src="https://github.com/user-attachments/assets/5c4dd23f-5f83-4b23-9e68-865149160dc0" width="1000" height="800">   
+<img src="https://github.com/user-attachments/assets/5c4dd23f-5f83-4b23-9e68-865149160dc0" width="1100" height="800">   
    
 While we were rethinking the design of a system I was involved in, I was asked to explain my proposed design. My explanation lacked a lot. It lacked what the pain points were, the reason behind the decisions, the alternatives I passed on due to something in my head that I couldn’t remember, and how the new decisions solved the initial problems. What happened was that I went through a decision-making process, and there was no clue as to how I got to where I got other than some random single word notes on the Miro, some red capitalized alarming phrases, crosses and all! 
 I was asked to turn my messy sketches into a formal ADR document, and clarify the vague parts. So here I'm going to share that experience with you.
