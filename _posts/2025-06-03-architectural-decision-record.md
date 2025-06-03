@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "How to write an ADR (Architectural Decision Record)?"
+title: "How to Write an ADR - Architectural Decision Record"
 date: 2025-06-03
 tags: [architecture]
 permalink: /:title/
@@ -33,7 +33,7 @@ Here's one of the ADRs I wrote, where I suggested replacing jobs and flipping th
 **Status:** Proposed  
 **Date:** 2025-06-03
 
-## Context
+### Context
 
 The current system uses scheduled background jobs to process stock trade data in three stages:
 
@@ -83,7 +83,7 @@ Processing stages will be triggered by events (e.g., message queue) as soon as n
 - Adds complexity to the database layer.
 - Not scalable or easily observable.
 
-### 3. Hybrid approach (event-driven for some steps, scheduled for others)
+#### 3. Hybrid approach (event-driven for some steps, scheduled for others)
 
 - Partial improvement with less refactor effort.
 - May still retain latency issues in some parts of the process.
